@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1700.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cbtest", "cbtest\cbtest.csproj", "{62F012E5-4890-4B0F-AE92-7AF11C0CE94D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cbunittest", "cbunittest\cbunittest.csproj", "{44C4541C-165D-4F42-8633-1F08851919E4}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{61F98B3C-6EAC-4AF2-8D20-B1AB3D45771F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62F012E5-4890-4B0F-AE92-7AF11C0CE94D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62F012E5-4890-4B0F-AE92-7AF11C0CE94D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62F012E5-4890-4B0F-AE92-7AF11C0CE94D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62F012E5-4890-4B0F-AE92-7AF11C0CE94D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44C4541C-165D-4F42-8633-1F08851919E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44C4541C-165D-4F42-8633-1F08851919E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44C4541C-165D-4F42-8633-1F08851919E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44C4541C-165D-4F42-8633-1F08851919E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61F98B3C-6EAC-4AF2-8D20-B1AB3D45771F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61F98B3C-6EAC-4AF2-8D20-B1AB3D45771F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61F98B3C-6EAC-4AF2-8D20-B1AB3D45771F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61F98B3C-6EAC-4AF2-8D20-B1AB3D45771F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B84F3C19-E19F-403B-9F97-5A4C2630119D}
+	EndGlobalSection
+EndGlobal

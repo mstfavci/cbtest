@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  cbunittest:
+    image: ${DOCKER_REGISTRY-}cbunittest
+    build:
+      context: .
+      dockerfile: cbunittest/Dockerfile
