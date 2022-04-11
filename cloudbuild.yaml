@@ -48,7 +48,7 @@ steps:
 #- 'gcr.io/$PROJECT_ID/cbtest:$SHORT_SHA'
 #- 'gcr.io/$PROJECT_ID/cbtest:latest' 
 # You can organize your builds with tags
-tags: ['cbtest']
+#tags: ['cbtest']
 
 # You can configure more options than the ones listed here. Visit
 # https://cloud.google.com/cloud-build/docs/build-config to see the full list of
