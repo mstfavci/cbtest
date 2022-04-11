@@ -17,12 +17,12 @@
 # tag it with the name of the image.
 steps:
 # Build the container image
-- name: 'gcr.io/cloud-builders/dotnet'
+- name: 'gcr.io/cloud-builders/docker'
   #args: [dotnet test]
   args: ['build', '--tag=gcr.io/$PROJECT_ID/cbtest:$SHORT_SHA', '--tag=gcr.io/$PROJECT_ID/cbtest:latest', '.']
 
 # Push the container image to Container Registry
-- name: 'gcr.io/cloud-builders/dotnet'
+- name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'gcr.io/$PROJECT_ID/cbtest:$SHORT_SHA'] 
 - name: 'mcr.microsoft.com/dotnet/core/aspnet:3.0'
   args: ['push','gcr.io/$PROJECT_ID/cbtest:latest'] 
