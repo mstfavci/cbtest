@@ -19,7 +19,7 @@ steps:
 # Build the container image
 - name: 'gcr.io/cloud-builders/docker'
   #args: [dotnet test]
-  args: ['build', 'cbunittest', '--tag=gcr.io/$PROJECT_ID/cbtest:$SHORT_SHA', '--tag=gcr.io/$PROJECT_ID/cbtest:latest', '.']
+  args: ['build', 'docker-compose.yml', '--tag=gcr.io/$PROJECT_ID/cbtest:$SHORT_SHA', '--tag=gcr.io/$PROJECT_ID/cbtest:latest', '.']
 
 # Push the container image to Container Registry
 - name: 'gcr.io/cloud-builders/docker'
