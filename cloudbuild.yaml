@@ -22,10 +22,10 @@ steps:
   args: ['build', '-f', 'cbunittest/Dockerfile', '--tag=gcr.io/$PROJECT_ID/cbtest:$SHORT_SHA', '--tag=gcr.io/$PROJECT_ID/cbtest:latest', '.']
 
 # Push the container image to Container Registry
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/$PROJECT_ID/cbtest:$SHORT_SHA'] 
-- name: 'mcr.microsoft.com/dotnet/core/aspnet:3.0'
-  args: ['push','gcr.io/$PROJECT_ID/cbtest:latest'] 
+#- name: 'gcr.io/cloud-builders/docker'
+#  args: ['push', 'gcr.io/$PROJECT_ID/cbtest:$SHORT_SHA'] 
+#- name: 'mcr.microsoft.com/dotnet/core/aspnet:3.0'
+#  args: ['push','gcr.io/$PROJECT_ID/cbtest:latest'] 
 
 ## Deploy container image to Cloud Run
 #- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
@@ -44,9 +44,9 @@ steps:
 # Rather than writing a build step to push this image, you can simply list the
 # image below and it will automatically be uploaded to Google Cloud Container
 # Registry.
-images:
-- 'gcr.io/$PROJECT_ID/cbtest:$SHORT_SHA'
-- 'gcr.io/$PROJECT_ID/cbtest:latest' 
+#images:
+#- 'gcr.io/$PROJECT_ID/cbtest:$SHORT_SHA'
+#- 'gcr.io/$PROJECT_ID/cbtest:latest' 
 # You can organize your builds with tags
 tags: ['cbtest']
 
